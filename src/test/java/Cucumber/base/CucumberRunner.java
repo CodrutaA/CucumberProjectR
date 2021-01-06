@@ -8,8 +8,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 @CucumberOptions(
-        features = {"src/test/resources/features/firstProject"},
-        glue = {"firstProject.stepdefinitions"}
+        features = {"src/test/resources/features/CucumberP"},
+        glue = {"Cucumber.stepdefinitions"}
 )
 public class CucumberRunner {
 

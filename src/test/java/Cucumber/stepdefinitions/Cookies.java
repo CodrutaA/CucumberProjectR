@@ -19,7 +19,6 @@ public class Cookies {
         else {
             CookieBelly=false;
             System.out.println("Given I have no cookies in my belly");
-            throw new PendingException();
         }
     }
     @When("I wait {int} hour")
@@ -28,7 +27,6 @@ public class Cookies {
         {
             belly = false;
             System.out.println("When I do no wait ");
-            throw new PendingException();
         }else {
             belly =true;
             System.out.println("When I wait " + hour + " hour");
@@ -43,7 +41,6 @@ public class Cookies {
             System.out.println("Then my belly should growl");
         }else{
             System.out.println("Then my belly should be full");
-            throw new PendingException();
         }
     }
 }
